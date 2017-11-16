@@ -1,0 +1,14 @@
+.image {
+    background-image:url("../pictures/pexels-photo-296878.jpeg") ;
+    background-size: cover;
+    min-height: 100vh;
+}
+.button {
+    display: block;
+    margin: auto;
+    width: 12rem;
+    height: 5rem;
+    background-color: #fff1e5;
+    border-radius: 20px;
+    opacity: 0.6;
+}
