@@ -33,3 +33,7 @@ body {
     border-color: red;
     transition: .5s;
 }
+.submit {
+    background-color: white;
+    border: solid;
+}
