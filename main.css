@@ -56,3 +56,6 @@ body {
     padding: 5px;
     text-transform: uppercase;
 }
+.flex{
+    display: flex;
+}
