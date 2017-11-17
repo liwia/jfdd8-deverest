@@ -1,6 +1,6 @@
 body {
     background-image: url('https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg');
-    background-size: cover;
+    background-size: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -32,4 +32,12 @@ body {
 .button:hover {
     border-color: red;
     transition: .5s;
+}
+.submit{
+    border: 2px;
+}
+.white{
+    background-color: white;
+    height:100px;
+    width: 200px;
 }

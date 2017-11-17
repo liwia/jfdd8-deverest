@@ -35,5 +35,10 @@ body {
 }
 .submit {
     background-color: white;
-    border: solid;
+    border: 1px solid;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.white{
+    background-color: white;
 }
