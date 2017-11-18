@@ -56,8 +56,21 @@ body {
     padding: 5px;
     text-transform: uppercase;
 }
-.flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/*.flex{*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+/*}*/
+
+.email{
+    background-color: lightgrey;
+    width: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+    box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 }
