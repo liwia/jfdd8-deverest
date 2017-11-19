@@ -79,22 +79,21 @@ body {
 input[type=email]
 {
     width: 300px;
-    background-color: #efefef;
-    color: #666;
-    border: 2px solid #ddd;
-    font-size: 20px;
-    padding:10px;
-    box-sizing: border-box;
+    font-size: 1.25rem;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    padding:10px;
+    box-sizing: border-box;
+    cursor: auto;
+    /*background-color: #efefef;*/
+    /*color: #666;*/
+    /*border: 2px solid #ddd;*/
+
+    background: none;
+    border: none;
 }
 input[type=email]:focus{
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-    box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-    border: 2px solid #a5cda5;
-    background-color: #e9f3e9;
-    color: #428432;
+    border: 2px solid #f60;
 }
 input[type=submit]{
     width: 300px;
@@ -112,11 +111,8 @@ input[type=submit]{
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
-input[type=submit]:focus{
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-    box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);}
-input[type=submit]:hover{
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #333;
     color: #f60;
     border: 2px solid #f60;
