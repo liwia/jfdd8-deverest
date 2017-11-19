@@ -79,7 +79,7 @@ body {
 input[type=email]
 {
     width: 300px;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     outline: none;
     font-family: 'Roboto', sans-serif;
     padding:10px;
@@ -105,7 +105,7 @@ input[type=submit]{
     padding: 15px 10px;
     text-transform: uppercase;
     border: none;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor:pointer;
     letter-spacing: 2px;
     box-sizing: border-box;
