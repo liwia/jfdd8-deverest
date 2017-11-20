@@ -44,6 +44,8 @@ body {
     text-align: center;
     color: #000;
     padding-top: 100px;
+    font-weight: 300;
+    font-size: 30px;
 }
 
 #content{
@@ -117,4 +119,21 @@ input[type=submit]:active{
     background-color: #333;
     color: #f60;
     border: 2px solid #f60;
+}
+
+footer{
+    height: 100px;
+    padding-top: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.top{
+    padding-bottom: 30px;
+}
+
+.top a{
+    text-decoration: none;
+    color: #ffffff;
 }
