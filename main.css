@@ -47,7 +47,7 @@ body {
 
 }
 .menu ul li a:hover {
-    background-color: darkorange;
+    background-color: #f60;
     color:white;
 }
 
@@ -96,7 +96,7 @@ body {
 
 }
 #content h1, #content p {
-    background-color: darkorange;
+    background-color: #f60;
 }
 /*.submit {*/
     /*background-color: white;*/
@@ -119,7 +119,7 @@ body {
 
 .email{
     width: 100%;
-    height: 350px;
+    height: 250px;
     background-color: #333;
     padding: 50px 0;
 }
@@ -134,15 +134,14 @@ input[type=email]
     box-sizing: border-box;
     cursor: auto;
     color: #fff;
-    /*background-color: #efefef;*/
-    /*color: #666;*/
-    /*border: 2px solid #ddd;*/
-
+    background-color: #efefef;
+    color: #666;
+    border: 0.5px solid #f60;
     background: none;
-    border: none;
 }
+
 input[type=email]:focus{
-    border: 2px solid #f60;
+    border: 0.5px solid #f60;
 }
 input[type=submit]{
     width: 300px;
@@ -171,7 +170,7 @@ footer{
     height: 100px;
     padding-top: 30px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #444;
     text-align: center;
 }
 
@@ -183,6 +182,10 @@ footer{
     text-decoration: none;
     color: #ffffff;
 }
+.top a:hover{
+    color: #f60;
+}
+
 
 .more {
     height: 1000px;
