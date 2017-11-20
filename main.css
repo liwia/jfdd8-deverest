@@ -98,6 +98,9 @@ body {
 #content h1, #content p {
     background-color: #f60;
 }
+#content h1 {
+    padding: 5px;
+}
 /*.submit {*/
     /*background-color: white;*/
     /*border: 1px solid;*/
@@ -184,6 +187,7 @@ footer{
 }
 .top a:hover{
     color: #f60;
+    transition: .5s;
 }
 
 
