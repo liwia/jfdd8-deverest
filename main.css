@@ -19,7 +19,7 @@ body {
     background-color: #000000;
     text-transform: uppercase;
     display: inline-block;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .rightmenu  {
@@ -72,7 +72,7 @@ body {
     opacity: 1;
 }
 .button:hover {
-    border-color: red;
+    border-color: #f60;
     transition: .5s;
 
 }
