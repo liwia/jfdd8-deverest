@@ -4,12 +4,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#container{
+#container {
     background-image: url('https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg');
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
-    background-size: cover  ;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -19,16 +19,16 @@ body {
     background-color: #000000;
     text-transform: uppercase;
     display: inline-block;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-.rightmenu  {
+.rightmenu {
     float: right;
     margin-right: 30px;
- }
+}
 
 .leftmenu {
-    float: left
+    float: left;
     margin-left: 30px;
 }
 
@@ -46,9 +46,10 @@ body {
     font-size: 20px;
 
 }
+
 .menu ul li a:hover {
-    background-color: darkorange;
-    color:white;
+    background-color: #f60;
+    color: white;
 }
 
 .logo {
@@ -58,6 +59,7 @@ body {
     top: -10px;
     margin: auto;
 }
+
 .button {
     width: 50px;
     height: 50px;
@@ -71,13 +73,14 @@ body {
     margin: auto;
     opacity: 1;
 }
+
 .button:hover {
-    border-color: red;
+    border-color: #f60;
     transition: .5s;
 
 }
 
-.header-main{
+.header-main {
     text-align: center;
     color: #000;
     padding-top: 100px;
@@ -85,7 +88,7 @@ body {
     font-size: 30px;
 }
 
-#content{
+#content {
     width: 30%;
     height: 150px;
     position: relative;
@@ -95,9 +98,15 @@ body {
     top: 150px;
 
 }
+
 #content h1, #content p {
-    background-color: darkorange;
+    background-color: #f60;
 }
+
+#content h1 {
+    padding: 5px;
+}
+
 /*.submit {*/
     /*background-color: white;*/
     /*border: 1px solid;*/
@@ -117,34 +126,29 @@ body {
     letter-spacing: 1px;
 }
 
-.email{
+.email {
     width: 100%;
-    height: 350px;
+    height: 250px;
     background-color: #333;
     padding: 50px 0;
 }
 
-input[type=email]
-{
+input[type=email] {
     width: 300px;
     font-size: 1.35rem;
     outline: none;
     font-family: 'Roboto', sans-serif;
-    padding:10px;
+    padding: 10px;
     box-sizing: border-box;
     cursor: auto;
     color: #fff;
-    /*background-color: #efefef;*/
-    /*color: #666;*/
-    /*border: 2px solid #ddd;*/
-
+    background-color: #efefef;
+    color: white;
+    border: 0.5px solid #f60;
     background: none;
-    border: none;
 }
-input[type=email]:focus{
-    border: 2px solid #f60;
-}
-input[type=submit]{
+
+input[type=submit] {
     width: 300px;
     /*height: 70px;*/
     background-color: #f60;
@@ -154,44 +158,53 @@ input[type=submit]{
     text-transform: uppercase;
     border: none;
     margin-top: 20px;
-    cursor:pointer;
+    cursor: pointer;
     letter-spacing: 2px;
     box-sizing: border-box;
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
-input[type=submit]:hover,
-input[type=submit]:active{
+
+input[type=submit]:hover {
     background-color: #333;
     color: #f60;
     border: 2px solid #f60;
 }
 
+input[type=submit]:active {
+    color: white;
+}
+
 footer{
-    height: 100px;
+    height: 170px;
     padding-top: 30px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #444;
     text-align: center;
 }
 
-.top{
+.top {
     padding-bottom: 30px;
 }
 
-.top a{
+.top a {
     text-decoration: none;
     color: #ffffff;
 }
+
+.top a:hover {
+    color: #f60;
+    transition: .5s;
+}
+
 
 .more {
     height: 1000px;
 }
 
-.social-icons {
-    position: fixed;
-}
-
-.social-items a img {
-    border-radius: 25px;
+.icons img{
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    padding: 30px 10px;
 }
