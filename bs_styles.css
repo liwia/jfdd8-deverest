@@ -1,0 +1,13 @@
+.navbar-default {
+    position: fixed;
+    background-color: #000000;
+    text-transform: uppercase;
+    opacity: 0.9;
+    z-index: 1;
+    border:0;
+    padding:10px 0;
+}
+.navbar {
+    border-radius:0;
+    margin-bottom:0;
+}
