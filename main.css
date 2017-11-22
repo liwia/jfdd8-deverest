@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+
 }
 
 #container {
@@ -214,26 +215,41 @@ footer{
     padding: 30px 10px;
 }
 
+.title-offer {
+    text-align:  center;
+    margin: 25px;
+}
+.offer-content {
+    text-align: justify;
+    line-height: 30px;
+}
 
 .flexContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 80vw;
     min-height: 10rem;
     margin-left: 10vw;
     margin-top: 5vw;
     justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
    }
 
 .flexItem {
+    display: block;
+    height: 200px;
+    width: 200px;
     padding: 20px;
     color: #595959;
     font-family: Arial;
     font-size: 1rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .flexItem img {
-    width: 40px;
-    margin-right: 20px;
+    width: 60px;
+
+}
+
 }
