@@ -6,6 +6,7 @@
     z-index: 1;
     border:0;
     padding:10px 0;
+    width: 100%;
 }
 .navbar {
     border-radius:0;
