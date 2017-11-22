@@ -234,22 +234,21 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-   }
+ }
 
 .flexItem {
-    display: block;
     height: 200px;
     width: 200px;
     padding: 20px;
     color: #595959;
-    font-family: Arial;
     font-size: 1rem;
     text-align: center;
 }
 
 .flexItem img {
     width: 60px;
+    padding: 20px;
 
 }
 
-}
+
