@@ -11,7 +11,7 @@ body {
     max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 116px;
+    padding-top: 116px;
 }
 
 .menu {
@@ -84,7 +84,6 @@ body {
 .header-main {
     text-align: center;
     color: #000;
-    padding-top: 100px;
     font-weight: 300;
     font-size: 30px;
 }
