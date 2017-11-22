@@ -13,6 +13,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.alamakota {
+    height: 100%;
+    position: relative;
+}
+
 .menu {
     position: fixed;
     top: 0px;
@@ -207,4 +212,31 @@ footer{
     height: 40px;
     justify-content: space-between;
     padding: 30px 10px;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    min-height: 10rem;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    justify-content: space-between;
+
+
+}
+
+.flexItem {
+    padding: 20px;
+    color: #595959;
+    font-family: Arial;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.flexItem img {
+    width: 40px;
+    margin-right: 20px;
 }
