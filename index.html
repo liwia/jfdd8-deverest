@@ -9,23 +9,46 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>HTML, CSS and JavaScript demo</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+
 </head>
 <body id="main">
-    <div id="container">
-        <div class="menu">
-            <div>
-                <ul>
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#">See more</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="logo"><img src="logo_transp.png"/></div>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+    <div id="container">
+        <!--<div class="menu">-->
+            <!--<div>-->
+                <!--<ul>-->
+                    <!--<li><a href="#">Start</a></li>-->
+                    <!--<li><a href="#">See more</a></li>-->
+                    <!--<li><a href="#">About us</a></li>-->
+                    <!--<li><a href="#">Join</a></li>-->
+                    <!--<li><a href="#">Contact</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+
+            <!--<div class="logo"><img src="logo_transp.png"/></div>-->
+        <!--</div>-->
         <div id="content" class="header-main">
                 <h1>Wixer Party Planner</h1>
                 <p>A professional planner for every occasion.</p>
