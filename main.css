@@ -14,6 +14,11 @@ body {
     padding-top: 116px;
 }
 
+.alamakota {
+    height: 100%;
+    position: relative;
+}
+
 .menu {
     position: fixed;
     top: 0px;
@@ -214,7 +219,41 @@ footer{
     justify-content: space-between;
     padding: 30px 10px;
 }
+.title-offer {
+    text-align:  center;
+    margin: 25px;
+}
+.offer-content {
+    text-align: justify;
+    line-height: 30px;
+}
 
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    min-height: 10rem;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.flexItem {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    color: #595959;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.flexItem img {
+    width: 60px;
+    padding: 20px;
+
+}
 @media screen and (min-width: 800px) and (max-width:1200px){
 
 }
