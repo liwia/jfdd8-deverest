@@ -219,9 +219,7 @@ footer{
 }
 
 
-.more {
-    height: 1000px;
-}
+
 
 .icons{
     displa: flex;
@@ -230,7 +228,8 @@ footer{
     width: 40px;
     height: 40px;
     justify-content: space-between;
-    padding: 30px 10px;
+    padding: 5px;
+    margin-top: 10px;
 }
 .title-offer {
     text-align:  center;
@@ -258,13 +257,13 @@ footer{
     width: 200px;
     padding: 20px;
     color: #595959;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .flexItem img {
     width: 60px;
-    padding: 20px;
+    padding: 5px;
 
 }
 @media screen and (min-width: 800px) and (max-width:1200px){
