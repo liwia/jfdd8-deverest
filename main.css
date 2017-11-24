@@ -144,10 +144,11 @@ footer{
     padding: 30px 10px;
 }
 
-.title-offer {
+.offer-title {
     text-align:  center;
     margin: 25px;
 }
+
 .offer-content {
     text-align: justify;
     line-height: 30px;
@@ -179,12 +180,14 @@ footer{
     padding: 20px;
 
 }
+
 @media screen and (min-width: 800px) and (max-width:1200px){
 
 }
 @media screen and (min-width: 1201px){
 
 }
+
 .mordy {
     width: 100%;
     height: 200px;
@@ -195,6 +198,7 @@ footer{
     padding: 30px;
 
 }
+
 .mordy img {
     width: 200px;
     height: 200px;
