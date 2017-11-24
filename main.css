@@ -97,15 +97,11 @@ body {
     width: 30%;
     height: 150px;
     position: relative;
-    color: white;
+    color: black;
     margin-left: auto;
     margin-right: auto;
     top: 150px;
 
-}
-
-#content h1, #content p {
-    background-color: #f60;
 }
 
 #content h1 {
