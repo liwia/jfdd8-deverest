@@ -139,20 +139,11 @@ footer{
     transition: .5s;
 }
 
-
-.more {
-    height: 1000px;
-}
-
-.icons{
-    displa: flex;
-}
 .icons img{
     width: 40px;
-    /*height: 40px;*/
-    justify-content: space-between;
     padding: 30px 10px;
 }
+
 .title-offer {
     text-align:  center;
     margin: 25px;
