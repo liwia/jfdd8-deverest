@@ -19,64 +19,7 @@ body {
     position: relative;
 }
 
-#container:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    content: '';
-}
-
-.menu {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background-color: #000000;
-    text-transform: uppercase;
-    opacity: 0.9;
-    z-index: 1;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.menu ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 30px;
-}
-
-.menu ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    transition: 0.5s all;
-    font-size: 20px;
-
-}
-
-.menu ul li a:hover {
-    background-color: #f60;
-    color: white;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*top: -10px;*/
-    /*margin: auto;*/
-}
-.logo img {
-    height: 80px;
-}
-
-.button {
+.triangleButton {
     width: 50px;
     height: 50px;
     border-bottom: 5px solid white;
@@ -90,21 +33,16 @@ body {
     opacity: 1;
 }
 
-.button:hover {
+.triangleButton:hover {
     border-color: #f60;
     transition: .5s;
 
 }
 
-.header-main {
+.textUnderLogo {
     text-align: center;
-    color: #000;
-    padding-top: 100px;
     font-weight: 300;
     font-size: 30px;
-}
-
-#content {
     width: 30%;
     height: 150px;
     position: relative;
@@ -112,24 +50,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     top: 150px;
-
-}
-
-#content h1, #content p {
     background-color: white;
     opacity: 0.8;
-}
-
-#content h1 {
     padding: 5px;
 }
 
-/*.submit {*/
-    /*background-color: white;*/
-    /*border: 1px solid;*/
-    /*padding: 5px;*/
-    /*text-transform: uppercase;*/
-/*}*/
 .flex{
     display: flex;
     flex-direction: column;
@@ -145,9 +70,11 @@ body {
 
 .email {
     width: 100%;
-    height: 250px;
-    background-color: #444;
-    padding: 30px;
+    background-color: #333;
+    padding: 50px 0;
+    /*height: 250px;*/
+    /*background-color: #444;*/
+    /*padding: 30px;*/
 }
 
 input[type=email] {
@@ -158,7 +85,6 @@ input[type=email] {
     padding: 10px;
     box-sizing: border-box;
     cursor: auto;
-    color: #fff;
     background-color: #efefef;
     color: white;
     border: 0.5px solid #f60;
@@ -167,7 +93,6 @@ input[type=email] {
 
 input[type=submit] {
     width: 300px;
-    /*height: 70px;*/
     background-color: #f60;
     color: #fff;
     font-size: 1.125rem;
@@ -197,42 +122,31 @@ footer{
     height: 170px;
     padding: 30px;
     color: #fff;
-    background-color: #333;
+    background-color: #444;
+    /*background-color: #333;*/
     text-align: center;
 }
-.footer{
-    font-size: 0.7rem;
-}
 
-.top {
+.backToTopButton {
     padding-bottom: 30px;
 }
 
-.top a {
+.backToTopButton a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.top a:hover {
+.backToTopButton a:hover {
     color: #f60;
     transition: .5s;
 }
 
-
-.more {
-    height: 1000px;
-}
-
-.icons{
-    displa: flex;
-}
 .icons img{
     width: 40px;
-    height: 40px;
-    justify-content: space-between;
     padding: 30px 10px;
 }
-.title-offer {
+
+.offer-title {
     text-align:  center;
     margin: 25px;
 }
@@ -265,14 +179,19 @@ footer{
 .flexItem img {
     width: 60px;
     padding: 20px;
-
 }
+/*.white-div{*/
+    /*background-color: white;*/
+    /*height: 30vh;*/
+    /*width:60vh;*/
+    /*opacity: 0.7;*/
 @media screen and (min-width: 800px) and (max-width:1200px){
 
 }
 @media screen and (min-width: 1201px){
 
 }
+
 .mordy {
     width: 100%;
     height: 200px;
@@ -283,11 +202,17 @@ footer{
     padding: 30px;
 
 }
+
 .mordy img {
     width: 200px;
     height: 200px;
     border: 3px solid white;
 }
-.mordy img:hover {
 
-}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}           /*nav buttons color*/
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f60;
+    transition: .5s;
+}     /*nav buttons hover color*/
