@@ -204,3 +204,11 @@ footer{
     height: 200px;
     border: 3px solid white;
 }
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}           /*nav buttons color*/
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f60;
+    transition: .5s;
+}     /*nav buttons hover color*/
