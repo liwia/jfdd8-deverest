@@ -4,14 +4,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#container {
-    background-image: url('static/background.jpeg');
-    background-attachment: fixed;
-    height: 100vh;
+.parallax {
+    min-height: 100vh;
     max-width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 116px;
+    background: transparent;
 }
 
 .alamakota {
@@ -53,6 +49,7 @@ body {
     background-color: white;
     opacity: 0.8;
     padding: 5px;
+    z-index: 2;
 }
 
 
@@ -124,6 +121,10 @@ footer{
     background-color: #444;
     /*background-color: #333;*/
     text-align: center;
+}
+
+.footer{
+    font-size: 0.8em;
 }
 
 .backToTopButton {
