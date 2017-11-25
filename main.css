@@ -55,6 +55,7 @@ body {
     padding: 5px;
 }
 
+
 .flex{
     display: flex;
     flex-direction: column;
@@ -140,8 +141,8 @@ footer{
 }
 
 .icons img{
-    width: 40px;
-    padding: 30px 10px;
+    width: 30px;
+    margin: 20px 10px;
 }
 
 .offer-title {
@@ -213,9 +214,9 @@ footer{
 #mordy img {
     width: 50%;
     height: 50%;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 #mordy img:hover {
@@ -250,7 +251,6 @@ figcaption:hover:after {
     text-align: center;
     padding: 25px 0 25px 0;
     font-weight: 200;
-    padding-bottom: 25px;
     /*border-bottom: 1px solid #f60; <-- solid border instead of transition*/
 }
 
