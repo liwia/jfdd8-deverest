@@ -192,21 +192,48 @@ footer{
 
 }
 
-.mordy {
-    width: 100%;
-    height: 200px;
-    background-color: #444;
+#mordy {
     display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #ffffff;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
-
 }
 
-.mordy img {
-    width: 200px;
-    height: 200px;
-    border: 3px solid white;
+#mordy figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mordy img {
+    width: 50%;
+    height: 50%;
+}
+
+.mordy img:hover {
+    /*animacja naszych mord*/
+}
+
+#mordy figcaption {
+    padding: 15px 15px 0 15px;
+    font-size: 1.5rem;
+}
+
+figcaption:after {
+    content: '';
+    display: block;
+    margin: auto; /* when turn off and border goes from left to right*/
+    height: 1px;
+    width: 0px;
+    transition: width .7s ease, background-color .7s ease;
+}
+
+figcaption:hover:after {
+    width: 100%;
+    background: red;
 }
 
 .navbar-default .navbar-nav>li>a {
