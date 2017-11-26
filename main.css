@@ -201,7 +201,7 @@ footer{
     text-align: center;
 }
 .footer{
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .top {
@@ -222,7 +222,8 @@ footer{
 
 
 .icons{
-    displa: flex;
+    display: flex;
+    justify-content: center;
 }
 .icons img{
     width: 40px;
@@ -231,9 +232,13 @@ footer{
     padding: 5px;
     margin-top: 10px;
 }
-.offer {
 
+
+.offer {
+    width: 80vw;
+    margin: 0 auto;
 }
+
 .title-offer {
     text-align:  center;
     margin: 25px;
