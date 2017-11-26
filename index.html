@@ -7,13 +7,14 @@
     <link type="text/css" rel="stylesheet"
           href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css"/>
     <title>HTML, CSS and JavaScript demo</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bs_styles.css">
     <script src="./bootstrap/jquery.min.js"></script>
     <script src="./bootstrap/bootstrap.min.js"></script>
+    <script src="parallax.min.js"></script>
 </head>
 <body id="main">
 <nav class="navbar navbar-default">
@@ -38,7 +39,7 @@
         </div>
     </div>
 </nav>
-<div id="container">
+<div class="parallax" data-parallax="scroll" data-z-index="1" data-speed="0.7" data-image-src="static/background.jpeg">
     <div class="alamakota">
         <div id="content" class="textUnderLogo">
             <p>A professional planner for every occasion.</p>
@@ -47,81 +48,86 @@
             <div class="triangleButton"></div>
         </a>
     </div>
-        <div class="offer" id="offer">
-            <div class="offer-title">
-                <h1> WHAT WE OFFER?</h1>
-                <p class="offer-content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie
-                a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum
-                in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec
-                malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum.
-                Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum
-                sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer
-                ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque
-                penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales
-                lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus
-                lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque
-                cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum
-                primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
-
-            </div>
+</div>
+    <div class="offer" id="offer">
+        <div class="offer-title">
+            <h1>PLAN YOUR PARTY</h1>
+            <p class="offer-content">
+                WIXER is a professional party planner for every occasion. With our APP you’ll be able to organize
+                everything exactly as you want! And what You don’t want is a ton of stickies lying around your house.
+                So just follow these FEW SIMPLE STEPS and your perfect party plan will be there.</p>
         </div>
-        <div class="flexContainer">
-            <div class="flexItem"><img src="pictures/iconmonstr-christmas-42-240.png"/>
-                <p><b>Każdy rodzaj eventów: </b>Możliwość zaplanowania dowolnego wydarzenia np. urodzin, spotkań z
+    </div>
+    <div class="flexContainer">
+        <div class="flexItem"><img src="pictures/iconmonstr-christmas-42-240.png"/>
+            <p><b>Każdy rodzaj eventów: </b>Możliwość zaplanowania dowolnego wydarzenia np. urodzin, spotkań z
                 przyjaciółmi, itp.</p>
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-calendar-5-240.png"></br>
-                <p><b>Kalendarz: </b></br>Stwórz
-            własne wydarzenie lub dołącz do istniejącego.</p>
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-user-25-240.png"></br>
-                <p><b>Wybór ilości osób: </b></br>
-            Wybierz dowolną ilość osób z którymi chcesz zaplanować wydarzenie.</p>
-            </div>
-            <div class="flexItem"><img src="pictures/invitation.png"></br>
-                <p><b>Zaproszenia: </b> </br>Zapraszasz kogo
-            chcesz!</p>
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-shopping-bag-17-240.png" alt="">
-                <p><b>Lista zakupów: </b></br> Utwórz listę potrzebnych rzeczy i rozdziel ją pomiędzy zainteresowanymi
-                osobami.</p>
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-credit-card-16-240.png" alt=""></br>
-                <p><b>Listy
-            prezentowe: </b></br> Wybieranie prezentów może być przyjemne.</p>
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-time-9-240.png"><br>
-                <b>Przypomnienia: </b></br> Możliwość
-                wysyłania przypomnień przed każdym wydarzeniem.
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-chart-1-240.png"></br>
-                <p><b>Ranking:</b></br>Ranking
-            najlepszych wydarzeń</p>
-            </div>
-            <div class="flexItem"><img src="pictures/iconmonstr-picture-6-240.png">
-                <p><b> Galeria: </b></br>Galeria zorganizowanych wydarzeń.</p>
-            </div>
         </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-calendar-5-240.png"><br />
+            <p><b>Kalendarz: </b><br />Stwórz
+                własne wydarzenie lub dołącz do istniejącego.</p>
+        </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-user-25-240.png"><br />
+            <p><b>Wybór ilości osób: </b><br />
+                Wybierz dowolną ilość osób z którymi chcesz zaplanować wydarzenie.</p>
+        </div>
+        <div class="flexItem"><img src="pictures/invitation.png"><br />
+            <p><b>Zaproszenia: </b> <br />Zapraszasz kogo
+                chcesz!</p>
+        </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-shopping-bag-17-240.png" alt="">
+            <p><b>Lista zakupów: </b><br /> Utwórz listę potrzebnych rzeczy i rozdziel ją pomiędzy zainteresowanymi
+                osobami.</p>
+        </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-credit-card-16-240.png" alt=""><br />
+            <p><b>Listy
+                prezentowe: </b><br /> Wybieranie prezentów może być przyjemne.</p>
+        </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-time-9-240.png"><br />
+            <b>Przypomnienia: </b><br /> Możliwość
+            wysyłania przypomnień przed każdym wydarzeniem.
+        </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-chart-1-240.png"><br />
+            <p><b>Ranking:</b><br />Ranking
+                najlepszych wydarzeń</p>
+        </div>
+        <div class="flexItem"><img src="pictures/iconmonstr-picture-6-240.png">
+            <p><b> Galeria: </b><br />Galeria zorganizowanych wydarzeń.</p>
+        </div>
+    </div>
     <div class="email">
         <form class="flex">
             <p>Feel like getting in touch?</p>
-            <p style="font-size: 80%;">Chill out. We send one email only</p>
+            <p style="font-size: 80%;">Chill out :) We gonna send you only one email</p>
             <input type="email" placeholder="enter email">
             <input type="submit" class="submit" value="submit">
         </form>
     </div>
-    <div class="mordy">
-        <img src="pictures/Kuba.jpeg" alt="">
-        <img src="pictures/Liwia.jpg" alt="">
-        <img src="pictures/Rafał.jpg" alt="">
-        <img src="pictures/Robert.jpeg" alt="">
+    <div id="deverest">TEAM DEVEREST</div>
+
+    <div id="mordy">
+        <figure>
+            <img src="pictures/Kuba.png" alt="">
+            <figcaption>Jakub Patzer</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/Liwia.png" alt="">
+            <figcaption>Liwia Topolska</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/Rafal.png" alt="">
+            <figcaption>Rafał Penkala</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/Robert.png" alt="">
+            <figcaption>Robert Cisek</figcaption>
+        </figure>
     </div>
     <footer>
         <div class="backToTopButton">
             <a href="#main">BACK TO TOP</a>
         </div>
-        <div class="footer">Wixer.com made by Team Deverest &copy; 2017 All rights reserved</div>
+        <div class="footer">Wixer.com made by Team Deverest &copy; 2017 All rights reserved.</div>
         <div class="icons">
             <a href="http://www.facebook.pl"><img src="pictures/fb.png"/></a>
             <a href="http://www.twitter.com"><img src="pictures/twitter.png"/></a>
