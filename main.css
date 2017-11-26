@@ -235,7 +235,7 @@ footer{
 
 
 .offer {
-    width: 80vw;
+    width: 70vw;
     margin: 0 auto;
 }
 
@@ -271,8 +271,9 @@ footer{
 }
 
 .flexItem img {
-    width: 60px;
-    padding: 5px;
+    width: 55px;
+    margin-bottom: 8px;
+
 
 }
 @media screen and (min-width: 800px) and (max-width:1200px){
