@@ -3,12 +3,20 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
 .parallax {
     min-height: 100vh;
     max-width: 100%;
     background: transparent;
 }
+/*#container {*/
+    /*background-image: url('https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg');*/
+    /*background-attachment: fixed;*/
+    /*height: 100vh;*/
+    /*max-width: 100%;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*padding-top: 116px;*/
+/*}*/
 
 .alamakota {
     height: 100%;
@@ -52,7 +60,6 @@ body {
     z-index: 2;
 }
 
-
 .flex{
     display: flex;
     flex-direction: column;
@@ -79,6 +86,7 @@ input[type=email] {
     width: 300px;
     font-size: 1.35rem;
     outline: none;
+    /*font-family: 'Roboto', sans-serif;*/
     padding: 10px;
     box-sizing: border-box;
     cursor: auto;
@@ -101,6 +109,7 @@ input[type=submit] {
     letter-spacing: 2px;
     box-sizing: border-box;
     outline: none;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 
 input[type=submit]:hover {
