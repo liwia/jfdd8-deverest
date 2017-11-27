@@ -166,12 +166,6 @@ footer{
     margin-top: 10px;
 }
 
-
-.offer {
-    width: 70vw;
-    margin: 0 auto;
-}
-
 .title-offer {
     text-align:  center;
     margin: 25px;
@@ -303,6 +297,10 @@ figcaption:hover:after {
     transition: .5s;
 }     /*nav buttons hover color*/
 
+.navbar-default .navbar-nav>li>a:focus {
+    color: #f60;
+}
+
 .navbar-default .navbar-brand {
     color: white;
 }
@@ -310,6 +308,10 @@ figcaption:hover:after {
 .navbar-default .navbar-brand:hover {
     color: #f60;
     transition: .5s;
+}
+
+.navbar-default .navbar-brand:focus {
+    color: #f60;
 }
 
 .logo {
@@ -324,5 +326,19 @@ figcaption:hover:after {
     border: solid white;
 }
 #offer {
-    padding-top: 50px;
+    padding-top: 100px;
+    width: 70vw;
+    margin: 0 auto;
+}
+/*} button fix*/
+
+.gitIcons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    bottom: 45px;
+}
+.gitIcons img {
+    width: 30px;
+    height: 30px;
 }
