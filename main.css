@@ -166,12 +166,6 @@ footer{
     margin-top: 10px;
 }
 
-
-.offer {
-    width: 70vw;
-    margin: 0 auto;
-}
-
 .title-offer {
     text-align:  center;
     margin: 25px;
@@ -333,7 +327,10 @@ figcaption:hover:after {
 }
 #offer {
     padding-top: 100px;
+    width: 70vw;
+    margin: 0 auto;
 }
+/*} button fix*/
 
 .gitIcons {
     position: relative;
