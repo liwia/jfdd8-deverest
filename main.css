@@ -304,4 +304,5 @@ figcaption:hover:after {
 .logo img {
     background-color: black;
     opacity: .8;
+    border: solid white;
 }
