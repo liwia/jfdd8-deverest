@@ -9,13 +9,13 @@ body {
     background: transparent;
 }
 /*#container {*/
-    /*background-image: url('https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg');*/
-    /*background-attachment: fixed;*/
-    /*height: 100vh;*/
-    /*max-width: 100%;*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*padding-top: 116px;*/
+/*background-image: url('https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg');*/
+/*background-attachment: fixed;*/
+/*height: 100vh;*/
+/*max-width: 100%;*/
+/*background-size: cover;*/
+/*background-repeat: no-repeat;*/
+/*padding-top: 116px;*/
 /*}*/
 
 .alamakota {
@@ -151,22 +151,35 @@ footer{
     transition: .5s;
 }
 
+
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
 .icons img{
-    width: 30px;
-    margin: 20px 10px;
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 10px;
 }
 
-.offer-title {
+
+.offer {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.title-offer {
     text-align:  center;
     margin: 25px;
-    padding-top: 20px;
+
 }
 .offer-content {
-    display: block;
-    text-align: center;
+    text-align: justify;
     line-height: 30px;
-    padding-top: 20px;
-    letter-spacing: 0.5px;
 }
 
 .flexContainer {
@@ -186,19 +199,21 @@ footer{
     width: 200px;
     padding: 20px;
     color: #595959;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .flexItem img {
-    width: 60px;
-    padding: 20px;
+    width: 55px;
+    margin-bottom: 8px;
+
+
 }
 /*.white-div{*/
-    /*background-color: white;*/
-    /*height: 30vh;*/
-    /*width:60vh;*/
-    /*opacity: 0.7;*/
+/*background-color: white;*/
+/*height: 30vh;*/
+/*width:60vh;*/
+/*opacity: 0.7;*/
 @media screen and (min-width: 800px) and (max-width:1200px){
 
 }
