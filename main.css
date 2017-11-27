@@ -21,18 +21,19 @@ body {
 .alamakota {
     height: 100%;
     position: relative;
+    z-index: 2;
 }
 
 .triangleButton {
     width: 50px;
     height: 50px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
+    border-bottom: 7px solid white;
+    border-right: 7px solid white;
     transform: rotate(45deg);
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 100px;
+    top: 520px;
     margin: auto;
     opacity: 1;
 }
@@ -46,15 +47,15 @@ body {
 .textUnderLogo {
     text-align: center;
     font-weight: 300;
-    font-size: 30px;
-    width: 30%;
-    height: 150px;
+    font-size: 25px;
+    width: 550px;
+    height: 50px;
     position: relative;
-    color: black;
+    color: white;
     margin-left: auto;
     margin-right: auto;
     top: 150px;
-    background-color: white;
+    background-color: black;
     opacity: 0.8;
     padding: 5px;
     z-index: 2;
@@ -285,3 +286,22 @@ figcaption:hover:after {
     color: #f60;
     transition: .5s;
 }     /*nav buttons hover color*/
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #f60;
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+
+.logo img {
+    background-color: black;
+    opacity: .8;
+}
