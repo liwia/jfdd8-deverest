@@ -48,8 +48,8 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 25px;
-    width: 550px;
-    height: 50px;
+    max-width: 550px;
+    min-height: 50px;
     position: relative;
     color: white;
     margin-left: auto;
@@ -235,6 +235,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
 }
 
 #mordy img {
@@ -321,4 +322,7 @@ figcaption:hover:after {
     background-color: black;
     opacity: .8;
     border: solid white;
+}
+#offer {
+    padding-top: 50px;
 }
