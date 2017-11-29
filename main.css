@@ -80,7 +80,7 @@ body {
 .email {
     width: 100%;
     background-color: #333;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px;
     /*height: 250px;*/
     /*background-color: #444;*/
@@ -129,20 +129,22 @@ input[type=submit]:active {
 
 footer {
     width: 100%;
-    height: 170px;
-    padding: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
     color: #fff;
     background-color: #444;
     /*background-color: #333;*/
     text-align: center;
+    margin-top: 50px;
 }
 
 .footer {
+    padding: 50px 0 20px 0;
     font-size: 0.8em;
 }
 
 .backToTopButton {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .backToTopButton a {
@@ -276,6 +278,7 @@ figcaption:hover:after {
     text-align: center;
     padding: 25px 0 25px 0;
     font-weight: 200;
+    padding-top: 100px;
     /*border-bottom: 1px solid #f60; <-- solid border instead of transition*/
 }
 
