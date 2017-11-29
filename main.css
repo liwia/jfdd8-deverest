@@ -216,7 +216,7 @@ footer{
 
 }
 
-#mordy {
+#about-us {
     display: flex;
     width: 100%;
     height: 50vh;
@@ -225,15 +225,15 @@ footer{
     align-items: center;
 }
 
-#mordy figure {
+#about-us figure {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 
 }
 
-#mordy img {
+#about-us img {
     width: 50%;
     height: 50%;
     -webkit-transition: all 0.2s ease-in;
@@ -241,12 +241,12 @@ footer{
     transition: all 0.2s ease-in;
 }
 
-#mordy img:hover {
+#about-us img:hover {
     width: 55%;
     height: 55%;
 }
 
-#mordy figcaption {
+#about-us figcaption {
     padding: 15px 15px 0 15px;
     font-size: 1.5rem;
 }
@@ -282,7 +282,7 @@ figcaption:hover:after {
     margin: auto; /* when turn off border goes from left to right*/
     height: 1px;
     width: 0px;
-    transition: width .7s ease, background-color .7s ease;
+    transition: width 1.5s ease, background-color 1.5s ease;
 }
 
 #deverest:hover:after {
@@ -341,7 +341,7 @@ figcaption:hover:after {
     margin: auto;
 }
 
-#mordy a img.gitIcons {
+#about-us a img.gitIcons {
     width: 40px;
     height: 40px;
 }
