@@ -337,7 +337,9 @@ figcaption:hover:after {
     position: relative;
     display: flex;
     justify-content: space-around;
-    bottom: 45px;
+    align-items: flex-end;
+    top: 30px;
+    margin: auto;
 }
 .gitIcons img {
     width: 30px;
