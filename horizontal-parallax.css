@@ -20,4 +20,13 @@
     /*right: 0;*/
     z-index: 1;
     background-color: #777777;
+    animation: test 2s linear infinite;
+}
+
+@keyframes test {
+    0% {left: 0}
+    25% {left: 20px}
+    50% {left: 40px}
+    75% {left: 60px}
+    100% {left: 80px}
 }
