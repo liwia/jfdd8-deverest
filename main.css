@@ -261,20 +261,6 @@ footer {
     font-size: 1.5rem;
 }
 
-figcaption:after {
-    content: '';
-    display: block;
-    margin: auto; /* when turn off and border goes from left to right*/
-    height: 1px;
-    width: 0px;
-    transition: width .7s ease, background-color .7s ease;
-}
-
-figcaption:hover:after {
-    width: 100%;
-    background: #f60;
-}
-
 #deverest {
     font-size: 3em;
     letter-spacing: 2px;
@@ -284,7 +270,6 @@ figcaption:hover:after {
     padding: 25px 0 25px 0;
     font-weight: 200;
     padding-top: 100px;
-    /*border-bottom: 1px solid #f60; <-- solid border instead of transition*/
 }
 
 #deverest:after {
@@ -293,7 +278,7 @@ figcaption:hover:after {
     margin: auto; /* when turn off border goes from left to right*/
     height: 1px;
     width: 0px;
-    transition: width .7s ease, background-color .7s ease;
+    transition: width 1.7s ease, background-color 1.7s ease;
 }
 
 #deverest:hover:after {
@@ -360,4 +345,11 @@ figcaption:hover:after {
     width: 40px;
     height: 40px;
 }
+
+/*@keyframes  {*/
+    /*.active_anim {*/
+
+/*}*/
+/*}*/
+
 
