@@ -312,6 +312,11 @@ footer {
     background-color: inherit;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #f60;
+    background-color: initial;
+}
+
 
 .logo {
     position: relative;
