@@ -299,7 +299,7 @@ footer {
 }
 
 .navbar-default .navbar-brand {
-    color: white;
+    color: #f60;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -314,7 +314,7 @@ footer {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #f60;
-    background-color: initial;
+    background-color: initial ;
 }
 
 
