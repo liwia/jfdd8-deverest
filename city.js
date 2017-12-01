@@ -5,7 +5,6 @@ $(function () {
       $(this).animate({ left: 1000 + (index * 150 + 200)})
   });
 
-
     $('.par2').each(function (index) {
         $(this).css('left', index * 150);
         $(this).animate({ left: 1000 + (index * 150 + 200)})
