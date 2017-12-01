@@ -8,8 +8,10 @@
     bottom: 0;
     background-color: #999999;
     z-index: 1;
+    overflow: hidden;
 }
 
+/*<editor-fold desc="Description">*/
 .par1 {
     width: 100px;
     height: 80px;
@@ -20,7 +22,8 @@
     /*right: 0;*/
     z-index: 1;
     background-color: #444444;
-    animation: par1 3.5s linear infinite;
+    /*animation: anim 3.5s linear infinite;*/
+    transition: left 3.5s linear;
 }
 
 .par2 {
@@ -29,7 +32,7 @@
     position: absolute;
     z-index: 1;
     background-color: #666666;
-    animation: par2 4s linear infinite;
+    animation: anim 4s linear infinite;
 }
 
 .par3 {
@@ -38,7 +41,7 @@
     position: absolute;
     z-index: 1;
     background-color: #777777;
-    animation: par3 5s linear infinite;
+    animation: anim 5s linear infinite;
 }
 
 .par4 {
@@ -47,37 +50,11 @@
     position: absolute;
     z-index: 1;
     background-color: #888888;
-    animation: par4 7s linear infinite;
+    animation: anim 7s linear infinite;
 }
+/*</editor-fold>*/
 
-@keyframes par1 {
-    0% {left: 0}
-    25% {left: 300px}
-    50% {left: 600px}
-    75% {left: 900px}
-    100% {left: 1200px}
-}
-
-@keyframes par2 {
-    0% {left: 0}
-    25% {left: 300px}
-    50% {left: 600px}
-    75% {left: 900px}
-    100% {left: 1200px}
-}
-
-@keyframes par3 {
-    0% {left: 0}
-    25% {left: 300px}
-    50% {left: 600px}
-    75% {left: 900px}
-    100% {left: 1200px}
-}
-
-@keyframes par4{
-    0% {left: 0}
-    25% {left: 300px}
-    50% {left: 600px}
-    75% {left: 900px}
-    100% {left: 1200px}
+@keyframes anim {
+    0% {left: -100px}
+    100% {left: calc(100% + 100px)}
 }
