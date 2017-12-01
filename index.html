@@ -84,8 +84,11 @@
 </div>
 <div id="email" class="email">
     <form class="flex">
-        <p>Feel like getting in touch?</p>
-        <p style="font-size: 80%;">Chill out :) We gonna send you only one email</p>
+        <p>Feel like getting in touch?
+            <a href="#"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Chill out :) We gonna send you one email only"><img src="pictures\question.png"/></a></p>
         <input type="email" placeholder="enter email">
         <input type="submit" class="submit" value="submit">
     </form>
@@ -141,6 +144,11 @@
     </div>
 </footer>
 
+<script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 <script src="scroll_active.js"></script>
 </body>
 </html>

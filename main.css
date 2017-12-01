@@ -79,6 +79,10 @@ body {
     font-size: 2.25rem;
     letter-spacing: 1px;
 }
+.flex>p>a>img{
+    max-height: 1.5rem;
+    vertical-align: top;
+}
 
 .email {
     width: 100%;
@@ -111,7 +115,7 @@ input[type=submit] {
     font-size: 1.125rem;
     padding: 15px 10px;
     text-transform: uppercase;
-    border: none;
+    border: 2px solid #f60;
     margin-top: 20px;
     cursor: pointer;
     letter-spacing: 2px;
@@ -211,11 +215,6 @@ footer {
 
 }
 
-/*.white-div{*/
-/*background-color: white;*/
-/*height: 30vh;*/
-/*width:60vh;*/
-/*opacity: 0.7;*/
 @media screen and (min-width: 800px) and (max-width: 1200px) {
 
 }
@@ -345,9 +344,6 @@ figure a .gitIcons {
 }
 
 #about-us a img.gitIcons {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
-
-
-
