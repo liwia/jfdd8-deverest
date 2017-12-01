@@ -23,7 +23,7 @@
     z-index: 1;
     background-color: #444444;
     /*animation: anim 3.5s linear infinite;*/
-    transition: left 3.5s linear;
+    transition: left 3s linear;
 }
 
 .par2 {
@@ -32,7 +32,7 @@
     position: absolute;
     z-index: 1;
     background-color: #666666;
-    transition: left 4s linear;
+    transition: left 4.5s linear;
 }
 
 .par3 {
@@ -41,7 +41,7 @@
     position: absolute;
     z-index: 1;
     background-color: #777777;
-    transition: left 4.5s linear;
+    transition: left 6s linear;
 }
 
 .par4 {
@@ -50,7 +50,7 @@
     position: absolute;
     z-index: 1;
     background-color: #888888;
-    transition: left 5s linear;
+    transition: left 7.5s linear;
 }
 /*</editor-fold>*/
 
