@@ -6,8 +6,8 @@ function checkActiveSection() {
 
     if (windowOffset > section_Offset - 250) {
         Array.from(section.querySelectorAll('figure')).forEach(function (element) {
-            if (!element.classList.contains('bounceIn')){
-                element.classList.add('bounceIn')
+            if (!element.classList.contains('bounce')){
+                element.classList.add('bounce')
             }
         })
     }
