@@ -82,10 +82,11 @@
 </div>
 </div>
 <div id="email" class="email">
-    <form class="flex">
+    <form class="flex" method="POST" action="https://formspree.io/WixerPlanner@gmail.com">
+        <input type="hidden" name="_next" value="//localhost:63342/jfdd8-deverest/game.html" />
         <p>Feel like getting in touch?</p>
         <p style="font-size: 80%;">Chill out :) We gonna send you only one email</p>
-        <input type="email" placeholder="enter email">
+        <input name="user-email" type="email" placeholder="enter email">
         <input type="submit" class="submit" value="submit">
     </form>
 </div>
@@ -128,3 +129,4 @@
 </footer>
 </body>
 </html>
+
