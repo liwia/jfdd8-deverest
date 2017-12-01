@@ -3,11 +3,13 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 .parallax {
     min-height: 100vh;
     max-width: 100%;
     background: transparent;
 }
+
 /*#container {*/
 /*background-image: url('https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg');*/
 /*background-attachment: fixed;*/
@@ -64,14 +66,15 @@ body {
     padding: 5px;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-.flex>p {
+
+.flex > p {
     color: #fff;
     font-size: 2.25rem;
     letter-spacing: 1px;
@@ -83,13 +86,12 @@ body {
 .email {
     width: 100%;
     background-color: #333;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px;
     /*height: 250px;*/
     /*background-color: #444;*/
     /*padding: 30px;*/
 }
-
 
 input[type=email] {
     width: 300px;
@@ -131,17 +133,19 @@ input[type=submit]:active {
     color: white;
 }
 
-footer{
+footer {
     width: 100%;
-    height: 170px;
-    padding: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
     color: #fff;
     background-color: #444;
     /*background-color: #333;*/
     text-align: center;
+    margin-top: 50px;
 }
 
-.footer{
+.footer {
+    padding: 50px 0 20px 0;
     font-size: 0.8em;
 }
 
@@ -159,14 +163,12 @@ footer{
     transition: .5s;
 }
 
-
-
-
-.icons{
+.icons {
     display: flex;
     justify-content: center;
 }
-.icons img{
+
+.icons img {
     width: 40px;
     height: 40px;
     justify-content: space-between;
@@ -175,10 +177,11 @@ footer{
 }
 
 .title-offer {
-    text-align:  center;
+    text-align: center;
     margin: 25px;
 
 }
+
 .offer-content {
     text-align: justify;
     line-height: 30px;
@@ -209,17 +212,13 @@ footer{
     width: 55px;
     margin-bottom: 8px;
 
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
 
 }
-/*.white-div{*/
-/*background-color: white;*/
-/*height: 30vh;*/
-/*width:60vh;*/
-/*opacity: 0.7;*/
-@media screen and (min-width: 800px) and (max-width:1200px){
 
-}
-@media screen and (min-width: 1201px){
+@media screen and (min-width: 1201px) {
 
 }
 
@@ -234,7 +233,7 @@ footer{
 
 #about-us figure {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 
@@ -249,27 +248,13 @@ footer{
 }
 
 #about-us img:hover {
-    width: 55%;
-    height: 55%;
+    width: 60%;
+    height: 60%;
 }
 
 #about-us figcaption {
     padding: 15px 15px 0 15px;
     font-size: 1.5rem;
-}
-
-figcaption:after {
-    content: '';
-    display: block;
-    margin: auto; /* when turn off and border goes from left to right*/
-    height: 1px;
-    width: 0px;
-    transition: width .7s ease, background-color .7s ease;
-}
-
-figcaption:hover:after {
-    width: 100%;
-    background: #f60;
 }
 
 #deverest {
@@ -280,7 +265,7 @@ figcaption:hover:after {
     text-align: center;
     padding: 25px 0 25px 0;
     font-weight: 200;
-    /*border-bottom: 1px solid #f60; <-- solid border instead of transition*/
+    padding-top: 100px;
 }
 
 #deverest:after {
@@ -289,7 +274,7 @@ figcaption:hover:after {
     margin: auto; /* when turn off border goes from left to right*/
     height: 1px;
     width: 0px;
-    transition: width .7s ease, background-color .7s ease;
+    transition: width 1.7s ease, background-color 1.7s ease;
 }
 
 #deverest:hover:after {
@@ -297,20 +282,24 @@ figcaption:hover:after {
     background: #f60;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: white;
-}           /*nav buttons color*/
-.navbar-default .navbar-nav>li>a:hover {
+}
+
+/*nav buttons color*/
+.navbar-default .navbar-nav > li > a:hover {
     color: #f60;
     transition: .5s;
-}     /*nav buttons hover color*/
+}
 
-.navbar-default .navbar-nav>li>a:focus {
+/*nav buttons hover color*/
+
+.navbar-default .navbar-nav > li > a:focus {
     color: #f60;
 }
 
 .navbar-default .navbar-brand {
-    color: white;
+    color: #f60;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -320,6 +309,12 @@ figcaption:hover:after {
 
 .navbar-default .navbar-brand:focus {
     color: #f60;
+    background-color: inherit;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #f60;
+    background-color: initial;
 }
 
 .logo {
@@ -333,20 +328,21 @@ figcaption:hover:after {
     opacity: .8;
     border: solid white;
 }
+
 #offer {
     padding-top: 100px;
     width: 70vw;
     margin: 0 auto;
 }
+
 /*} button fix*/
 
-.gitIcons {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    bottom: 45px;
+figure a .gitIcons {
+    padding: 10px;
+    margin: auto;
 }
-.gitIcons img {
-    width: 30px;
-    height: 30px;
+
+#about-us a img.gitIcons {
+    width: 60px;
+    height: 60px;
 }
