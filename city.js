@@ -8,7 +8,7 @@ $(function () {
 
         function loop() {
           result.css('left', -100 ).animate({
-                left: 1000 + ((index-1)  + 200)
+                left: 1100 + ((index-1)  + 200)
             }, 2000 * index, 'linear', loop);
         }
 
