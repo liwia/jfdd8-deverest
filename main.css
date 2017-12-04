@@ -247,6 +247,8 @@ footer {
 .multi-item-carousel .carousel-control.left,
 .multi-item-carousel .carousel-control.right {
     background-image: none;
+    color: black;
+    text-shadow: none;
 }
 
 .container-fluid{
@@ -255,7 +257,7 @@ footer {
 }
 
 .carouselItem{
-    max-width: 60px;
+    max-width: 70px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
