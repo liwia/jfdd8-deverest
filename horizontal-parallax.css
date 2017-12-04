@@ -13,45 +13,46 @@
 
 /*<editor-fold desc="Description">*/
 .par1 {
-    width: 100px;
-    height: 80px;
+    /*width: 100px;*/
+    /*height: 80px;*/
     position: absolute;
     /*top: 0;*/
     /*bottom: 0;*/
     /*left: 0;*/
     /*right: 0;*/
     z-index: 5;
-    background-color: #444444;
+    /*background-color: #999999;*/
     /*animation: anim 3.5s linear infinite;*/
     /*transition: left 3s linear;*/
 }
 
 .par2 {
-    width: 100px;
-    height: 150px;
+    /*width: 100px;*/
+    /*height: 150px;*/
     position: absolute;
     z-index: 4;
-    background-color: #666666;
+    /*background-color: #999999;*/
     /*transition: left 4.5s linear;*/
 }
 
 .par3 {
-    width: 100px;
-    height: 200px;
+    /*width: 100px;*/
+    /*height: 200px;*/
     position: absolute;
     z-index: 3;
-    background-color: #777777;
+    /*background-color: #999999;*/
     /*transition: left 6s linear;*/
 }
 
 .par4 {
-    width: 100px;
-    height: 250px;
+    /*width: 100px;*/
+    /*height: 250px;*/
     position: absolute;
     z-index: 2;
-    background-color: #888888;
+    /*background-color: #999999;*/
     /*transition: left 7.5s linear;*/
 }
+
 /*</editor-fold>*/
 
 /*@keyframes anim {*/
