@@ -226,12 +226,12 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 120px;
 }
 
 .container-fluid{
     margin-bottom: 30px;
     margin-top: 30px;
-    min-height: 200px;
 }
 
 .carouselItem{
@@ -241,7 +241,10 @@ footer {
     text-align:center;
 }
 .item  p{
-    margin: 20px 0px 15px;
+    margin: 20px 0 0;
+}
+.item{
+    min-height: 200px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
@@ -375,4 +378,25 @@ figure a .gitIcons {
 #about-us a img.gitIcons {
     width: 50px;
     height: 50px;
+}
+
+/* my-carousel*/
+
+.my-carousel{
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.my-carousel .carousel-items{
+    display: flex;
+    width: 300%;
+    position: relative;
+}
+
+.my-carousel .carousel-items .item.active{
+    flex-grow: 2;
+}
+.my-carousel .carousel-items .item{
+    flex-grow: 1;
 }
