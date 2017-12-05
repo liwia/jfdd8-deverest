@@ -15,13 +15,13 @@ $(function () {
         });
 
         var result = $('<div>')
-            .addClass('par' + index).css('width', '10000%').css('display', 'flex').css('align-items', 'flex-end').append(blocks)
+            .addClass('par' + index).css('width', '5000%').css('display', 'flex').css('align-items', 'flex-end').append(blocks)
             ;
 
         function loop() {
           result.css('left', '-5000%' ).stop().animate({
                 left: 1100 + ((index-1)  + 200)
-            }, 4000 * (index + 1), 'linear', loop);
+            }, 10000 * (index + 1), 'linear', loop);
         }
 
         loop();
