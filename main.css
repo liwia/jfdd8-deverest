@@ -394,9 +394,18 @@ figure a .gitIcons {
     position: relative;
 }
 
-.my-carousel .carousel-items .item.active{
-    flex-grow: 2;
-}
 .my-carousel .carousel-items .item{
     flex-grow: 1;
+}
+
+.carousel-left{
+    left: 0;
+    top: 15%;
+    position: absolute;
+}
+.carousel-right {
+    right: 0;
+    left: auto;
+    top: 15%;
+    position: absolute;
 }
