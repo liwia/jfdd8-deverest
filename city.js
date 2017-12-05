@@ -24,7 +24,7 @@ $(function () {
             // debugger
           result.stop().css('left', -container.width() * 50).animate({
                 left: 1300 + ((index-1))
-            }, 90000 * (index + 1), 'linear', loop)
+            }, 150000 * (index + 1), 'linear', loop)
         }
         loop();
 
