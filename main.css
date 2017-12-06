@@ -390,12 +390,14 @@ figure a .gitIcons {
 }
 .my-carousel .carousel-items{
     display: flex;
-    width: 300%;
+    width: calc(9 * 50%);
     position: relative;
 }
 
 .my-carousel .carousel-items .item{
     flex-grow: 1;
+    width: 1px;
+    text-align: center;
 }
 
 .carousel-left{
