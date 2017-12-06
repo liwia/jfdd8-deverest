@@ -7,6 +7,7 @@ body {
     height: 100vh;
     background: url("img/city_night_light.png") no-repeat center center;
     background-color: black;
+    position: relative;
 }
 
 .startGame {
@@ -41,6 +42,21 @@ body {
     top: 500px;
     left: 500px;
     position: absolute;
+}
+.bubbleArea {
+    width: 60%;
+    height: 45%;
+    background-color: #1b6d85;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    /*margin: 0 auto;*/
+    /*bottom: 0;*/
+    /*position-right: 0*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: 37vh;*/
 }
 
 h1{
