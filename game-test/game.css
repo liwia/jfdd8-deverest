@@ -50,5 +50,18 @@ h1{
     padding-top: 20px;
 }
 
+.timeBoard {
+    position: absolute;
+    margin: auto;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: #F5D96C;
+    text-align: center;
+    font-size: 25px;
+    top: 55%;
+    right: 5%;
+    padding-top: 20px;
+}
 
 
