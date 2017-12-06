@@ -233,13 +233,13 @@
         var id = 0;
         $('.carousel-left').on('click', function () {
             clearInterval(interval);
-            id -= 1;
+            id += 1;
             update();
         })
 
         var id = 0;
         $('.carousel-right').on('click', function () {
-            id += 1;
+            id -= 1;
             update();
         })
 
@@ -256,7 +256,7 @@
         })
 
         var interval = setInterval(function () {
-            $('.carousel-left').click()
+            $('.carousel-right').click()
         }, 2000)
     });
 </script>
