@@ -1,0 +1,61 @@
+.horizontal-parallax {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999999;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/*<editor-fold desc="Description">*/
+.par1 {
+    /*width: 100px;*/
+    /*height: 80px;*/
+    position: absolute;
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    z-index: 5;
+    /*background-color: #999999;*/
+    /*animation: anim 3.5s linear infinite;*/
+    /*transition: left 3s linear;*/
+}
+
+.par2 {
+    /*width: 100px;*/
+    /*height: 150px;*/
+    position: absolute;
+    z-index: 4;
+    /*background-color: #999999;*/
+    /*transition: left 4.5s linear;*/
+}
+
+.par3 {
+    /*width: 100px;*/
+    /*height: 200px;*/
+    position: absolute;
+    z-index: 3;
+    /*background-color: #999999;*/
+    /*transition: left 6s linear;*/
+}
+
+.par4 {
+    /*width: 100px;*/
+    /*height: 250px;*/
+    position: absolute;
+    z-index: 2;
+    /*background-color: #999999;*/
+    /*transition: left 7.5s linear;*/
+}
+
+/*</editor-fold>*/
+
+/*@keyframes anim {*/
+    /*0% {left: -100px}*/
+    /*100% {left: calc(100% + 100px)}*/
+/*}*/
