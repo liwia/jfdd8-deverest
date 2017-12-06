@@ -35,12 +35,14 @@ body {
     top: 58%;
     left: 5%;
     padding-top: 10px;
+    visibility: hidden;
 }
 
 .bubble {
     top: 500px;
     left: 500px;
     position: absolute;
+    visibility: hidden;
 }
 
 h1{
@@ -62,6 +64,7 @@ h1{
     top: 55%;
     right: 5%;
     padding-top: 20px;
+    visibility: hidden;
 }
 
 
