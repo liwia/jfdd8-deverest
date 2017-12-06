@@ -247,14 +247,6 @@ footer {
     min-height: 200px;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1200px) {
-
-}
-
-@media screen and (min-width: 1201px) {
-
-}
-
 #about-us {
     display: flex;
     width: 100%;
@@ -269,7 +261,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-
 }
 
 #about-us img {
@@ -412,4 +403,12 @@ figure a .gitIcons {
     left: auto;
     top: 15%;
     position: absolute;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) {
+
 }

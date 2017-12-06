@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-4">
+                            <div>
                                 <img src="pictures/iconmonstr-time-9-240.png"
                                      class="img-responsive carouselItem center-block">
                                 <p><b>Reminders: </b></br>Possibility to send reminders before each event.</p>
@@ -239,7 +239,6 @@
 
         var id = 0;
         $('.carousel-right').on('click', function () {
-            clearInterval(interval);
             id += 1;
             update();
         })
