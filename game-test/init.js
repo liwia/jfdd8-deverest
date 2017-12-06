@@ -13,9 +13,9 @@ $(document).ready(function () {
             top: Math.random() * 300 + 500,
             left: Math.random() * 300 + 500
         });
-        if (scoreNum === 100) {
+        if (scoreNum === 1000) {
             $('.bubble').css('visibility', 'hidden');
-            $('.computer').text('You Win!').css({'opacity': '1', 'z-index': '0'});
+            $('.toWin').text('You Win!').css({'opacity': '1', 'z-index': '0'});
             $('.startgame').text('Play Again?').css({'opacity': '1', 'z-index': '0'});
         }
     });
