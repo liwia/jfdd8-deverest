@@ -231,15 +231,45 @@
         $('[data-toggle="tooltip"]').tooltip();
 
         var id = 0;
+
+        var numberOfSlides = $('.carousel-items .item').length;
+        var lowerBound;
+
+        function calculateLowerBound(){
+            var windowWidth = $(window).width();
+            if(windowWidth > 1050){
+                var displayed =3;
+            }
+            else{
+                var displayed =2;
+            }
+            lowerBound = -1 * (numberOfSlides - displayed);
+        }
+        calculateLowerBound();
+
+        function incrementId(){
+            if(id < 0){
+                id += 1;
+            }
+        }
+
+        function decrementId(){
+            if(id > lowerBound){
+                id -= 1;
+            }
+        }
+
         $('.carousel-left:visible').on('click', function () {
             clearInterval(interval);
-            id += 1;
+//            id += 1;
+            incrementId();
             update();
         })
 
         $('.carousel-right:visible').on('click', function () {
             clearInterval(interval);
-            id -= 1;
+//            id -= 1;
+            decrementId();
             update();
         })
 
@@ -252,6 +282,8 @@
         }
 
         $(window).on('resize', function () {
+            calculateLowerBound();
+//            wywoluje go to tutaj bo mogla sie zmienic ilosc wyswietlanych elementow w zaleznosci od szerosci
             var windowWidth = $(window).width();
             if (windowWidth<750) {
                 clearInterval(interval);
@@ -276,7 +308,8 @@
         })
         var animationOn = true;
         var interval = setInterval(function () {
-            id -= 1;
+//            id -= 1;
+            decrementId();
             update();
         }, 2000)
     });
