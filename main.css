@@ -386,7 +386,19 @@ figure a .gitIcons {
 
 @media screen and (max-width: 749px) {
     .my-carousel .carousel-items{
-        width: calc(9 * 100%);
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        /*width: calc(9 * 100%);*/
         /*media@ na 1 itemy*/
+    }
+    .my-carousel .carousel-items .item{
+        width: 100%;
+    }
+    .carousel-left{
+        display: none;
+    }
+    .carousel-right {
+        display: none;
     }
 }
