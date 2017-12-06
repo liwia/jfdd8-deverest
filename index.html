@@ -6,8 +6,15 @@
     <meta name="viewport" content="initial-scale=1">
     <link type="text/css" rel="stylesheet"
           href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css"/>
-    <title>HTML, CSS and JavaScript demo</title>
-    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">-->
+    <title>Wixer Party Planner</title>
+    <!-- favicon start>-->
+    <link rel="apple-touch-icon" sizes="120x120" href="pictures/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
+    <link rel="manifest" href="pictures/favicons/manifest.json">
+    <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end>-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
@@ -15,10 +22,11 @@
     <script src="jquery-3.2.1.js"></script>
     <script src="./bootstrap/bootstrap.min.js"></script>
     <script src="parallax.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="horizontal-parallax.css">
     <script src="city.js"></script>
 </head>
-<body id="main">
+<body id="main" data-spy="scroll" data-target=".navbar" data-offset="70">
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
@@ -34,8 +42,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#offer">See more</a></li>
-                <li><a href="#mordy">About us</a></li>
                 <li><a href="#email">Join</a></li>
+                <li><a href="#deverest">About us</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
         </div>
@@ -56,89 +64,140 @@
 <div id="offer">
     <div class="title-offer">
         <h1> WHAT DO WE OFFER?</h1>
-        <p class="offer-content"> WIXER is a professional party planner for every occasion. With our APP you’ll be able to organize everything exactly as you want! And what You don’t want is a ton of stickies lying around your house. So just follow these FEW SIMPLE STEPS and your perfect party plan will be there.</p>
+        <p class="offer-content"> WIXER is a professional party planner for every occasion. With our APP you’ll be able
+            to organize everything exactly as you want! And what You don’t want is a ton of stickies lying around your
+            house. So just follow these FEW SIMPLE STEPS and your perfect party plan will be there.</p>
     </div>
 </div>
 
 <div class="flexContainer">
     <div class="flexItem"><img src="pictures/iconmonstr-christmas-42-240.png"/>
-        <p><b>All types of events: </b></br>Ability to schedule any event such as birthdays, meetings with friends etc.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-calendar-5-240.png"></br> <p><b>Calendar: </b></br>Create your own event or join to existing.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-user-25-240.png"></br><p><b>You specify the number of people: </b></br>It can be several or even several hundred people.</p></div>
-    <div class="flexItem"><img src="pictures/invitation.png"></br><p><b>Invitations: </b> </br>You invite anyone you want!</p></div>
+        <p><b>All types of events: </b></br>Ability to schedule any event such as birthdays, meetings with friends etc.
+        </p></div>
+    <div class="flexItem"><img src="pictures/iconmonstr-calendar-5-240.png"><br/>
+        <p><b>Calendar: </b><br/>Create your own event or join to existing.</p></div>
+    <div class="flexItem"><img src="pictures/iconmonstr-user-25-240.png"></br><p><b>You specify the number of
+        people: </b></br>It can be several or even several hundred people.</p></div>
+    <div class="flexItem"><img src="pictures/invitation.png"></br><p><b>Invitations: </b> </br>You invite anyone you
+        want!</p></div>
     <div class="flexItem"><img src="pictures/iconmonstr-shopping-bag-17-240.png" alt="">
-        <p><b>Shopping list: </b></br>Make a list of the things you need and distribute it between interested people.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-credit-card-16-240.png" alt=""></br><p><b>Gift list: </b></br> Choosing gifts can be fun.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-time-9-240.png"><br><b>Reminders: </b></br> Possibility to send reminders before each event.
+        <p><b>Shopping list: </b></br>Make a list of the things you need and distribute it between interested people.
+        </p></div>
+    <div class="flexItem"><img src="pictures/iconmonstr-credit-card-16-240.png" alt=""></br><p><b>Gift list: </b></br>
+        Choosing gifts can be fun.</p></div>
+    <div class="flexItem"><img src="pictures/iconmonstr-time-9-240.png"><br><b>Reminders: </b></br> Possibility to send
+        reminders before each event.
     </div>
-    <div class="flexItem"><img src="pictures/iconmonstr-chart-1-240.png"></br><p><b>Ranking:</b></br>Ranking of the best events.</p></div>
+    <div class="flexItem"><img src="pictures/iconmonstr-chart-1-240.png"></br><p><b>Ranking:</b></br>Ranking of the best
+        events.</p></div>
     <div class="flexItem"><img src="pictures/iconmonstr-picture-6-240.png">
         <p><b> Gallery: </b></br>Gallery of organized events.</p></div>
 </div>
 </div>
-    <div id="email" class="email">
-        <form class="flex">
-            <p>Feel like getting in touch?</p>
-            <p style="font-size: 80%;">Chill out :) We gonna send you only one email</p>
-            <input type="email" placeholder="enter email">
-            <input type="submit" class="submit" value="submit">
-        </form>
-        <div class="horizontal-parallax">
-            <!--<div class="par4"></div>-->
-            <!--<div class="par3"></div>-->
-            <!--<div class="par2"></div>-->
-            <!--<div class="par1"></div>-->
-            <!--<div class="par4"></div>-->
-            <!--<div class="par3"></div>-->
-            <!--<div class="par2"></div>-->
-            <!--<div class="par1"></div>-->
-            <!--<div class="par4"></div>-->
-            <!--<div class="par3"></div>-->
-            <!--<div class="par2"></div>-->
-            <!--<div class="par1"></div>-->
-            <!--<div class="par4"></div>-->
-            <!--<div class="par3"></div>-->
-            <!--<div class="par2"></div>-->
-            <!--<div class="par1"></div>-->
-        </div>
+<div id="email" class="email">
+    <form class="flex" method="POST" action="https://formspree.io/WixerPlanner@gmail.com">
+        <input type="hidden" name="_next" value="//localhost:63342/jfdd8-deverest/game.html"/>
+        <p>
+            Feel like getting in touch?
+            <span
+               data-toggle="tooltip"
+               data-placement="top"
+               title="Chill out :) We gonna send you one email only"
+            ><img src="pictures\question.png"/></span>
+        </p>
+        <input name="user-email" type="email" placeholder="enter email">
+        <input type="submit" class="submit" value="submit">
+    </form>
+    <div class="horizontal-parallax">
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
     </div>
+</div>
 <div id="deverest">TEAM DEVEREST</div>
 
-<div id="mordy">
-    <figure>
+<div id="about-us" class="container">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <figure class="animated">
         <img src="pictures/Kuba.png" alt="">
         <figcaption>Jakub Patzer</figcaption>
+        <div>
+            <a href="https://github.com/jakubpatzer" target="_blank"><img src="pictures/github-logo.png"
+                                                                          class="gitIcons"></a>
+            <a href="https://github.com/jakubpatzer" target="_blank"><img src="pictures/linkedin_round.png"
+                                                                          class="gitIcons"></a>
+        </div>
     </figure>
-    <figure>
-        <img src="pictures/Liwia.png" alt="">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <figure class="animated">
+        <img src="pictures/Liwia.png" alt="" class="profilePicture">
         <figcaption>Liwia Topolska</figcaption>
+        <div>
+            <a href="https://github.com/liwia" target="_blank"><img src="pictures/github-logo.png" class="gitIcons"></a>
+            <a href="https://github.com/jakubpatzer" target="_blank"><img src="pictures/linkedin_round.png"
+                                                                          class="gitIcons"></a>
+        </div>
     </figure>
-    <figure>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <figure class="animated">
         <img src="pictures/Rafal.png" alt="">
         <figcaption>Rafał Penkala</figcaption>
+        <div>
+            <a href="https://github.com/RafalPenkala" target="_blank"><img src="pictures/github-logo.png"
+                                                                           class="gitIcons"></a>
+            <a href="http://linkedin.com/in/rafał-penkala" target="_blank"><img src="pictures/linkedin_round.png"
+                                                                                class="gitIcons"></a>
+        </div>
     </figure>
-    <figure>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <figure class="animated">
         <img src="pictures/Robert.png" alt="">
         <figcaption>Robert Cisek</figcaption>
+        <div>
+            <a href="https://github.com/robertcisek" target="_blank"><img src="pictures/github-logo.png"
+                                                                          class="gitIcons"></a>
+            <a href="https://github.com/jakubpatzer" target="_blank"><img src="pictures/linkedin_round.png"
+                                                                          class="gitIcons"></a>
+        </div>
     </figure>
+    </div>
 </div>
-<div class="gitIcons">
-    <a href="https://github.com/jakubpatzer" target="_blank"><img src="pictures/github-logo.png"/></a>
-    <a href="https://github.com/liwia" target="_blank"><img src="pictures/github-logo.png"/></a>
-    <a href="https://github.com/RafalPenkala" target="_blank"><img src="pictures/github-logo.png"/></a>
-    <a href="https://github.com/robertcisek" target="_blank"><img src="pictures/github-logo.png"/></a>
-</div>
+
 <footer id="footer">
     <div class="backToTopButton">
         <a href="#main">BACK TO TOP</a>
     </div>
     <div class="footer">Wixer.com made by Team Deverest &copy; 2017 All rights reserved.</div>
     <div class="icons">
-        <a href="http://www.facebook.pl"><img src="pictures/fb.png"/></a>
-        <a href="http://www.twitter.com"><img src="pictures/twitter.png"/></a>
-        <a href="http://www.google.com"><img src="pictures/google_plus.png"/></a>
-        <a href="http://www.pinterest.com"><img src="pictures/pinterest.png"/></a>
+        <a href="https://www.facebook.com/infoshareacademy"><img src="pictures/facebook.png"/></a>
+        <a href="https://www.linkedin.com/company/infoshare-academy"><img src="pictures/linkedin.png"/></a>
+        <a href="https://www.instagram.com/infoshareacademy/"><img src="pictures/instagram.png"/></a>
     </div>
 </footer>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+<script src="scroll_active.js"></script>
 </body>
 </html>
