@@ -11,9 +11,8 @@ $(document).ready(function () {
     });
 
     var time = 30;
-    $('.timer').text(time);
     var interval = setInterval(function () {
-        time--;
+        $('.timer').text(time--);
         if (time === 0) {
             clearInterval(interval);
         }
