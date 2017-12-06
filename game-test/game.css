@@ -46,12 +46,16 @@ body {
 .bubbleArea {
     width: 60%;
     height: 45%;
-    background-color: #1b6d85;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    /*background-color: #1b6d85;*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     /*margin: 0 auto;*/
+    /*margin-bottom: 50px;*/
+
+    /*!*margin: 0 auto;*!*/
     /*bottom: 0;*/
     /*position-right: 0*/
     /*margin-left: auto;*/

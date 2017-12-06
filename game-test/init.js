@@ -6,17 +6,19 @@ $(document).ready(function () {
         scoreNum = 0;
         bubble.css('visibility', 'visible');
         $('.score').text(scoreNum);
+
+
+        var stopInterval = setInterval(function(){
+            var maxHeight = bubble.parent().height() - bubble.height();
+            var maxWidth = bubble.parent().width() - bubble.width();
+            bubble.css({
+                top: Math.random() * maxHeight,
+                left: Math.random() * maxWidth
+            });
+        }, 700);
     })
 
 
-    var stopInterval = setInterval(function(){
-        var maxHeight = bubble.parent().height() - bubble.height();
-        var maxWidth = bubble.parent().width() - bubble.width();
-        bubble.css({
-            top: Math.random() * maxHeight,
-            left: Math.random() * maxWidth
-        });
-    }, 1000);
 
     bubble.click(function() {
         $('.score').text(scoreNum +=10);
