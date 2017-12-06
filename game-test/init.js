@@ -12,6 +12,7 @@ $(document).ready(function () {
         var interval = setInterval(function () {
             if (time === 0) {
                 clearInterval(interval);
+            $('.startGame').text('Play Again?').css({'opacity': '1', 'z-index': '0', 'height': '70px'});
             }
             $('.timer').text(time--)
             ;
@@ -24,10 +25,9 @@ $(document).ready(function () {
             top: Math.random() * 300 + 500,
             left: Math.random() * 300 + 500
         });
-        if (scoreNum === 100) {
+        if (scoreNum === 1000) {
             $('.bubble').css('visibility', 'hidden');
             $('.toWin').text('You Win!').css({'opacity': '1', 'z-index': '0'});
-            $('.startGame').text('Play Again?').css({'opacity': '1', 'z-index': '0', 'height': '70px'});
         }
     });
 });
