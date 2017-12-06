@@ -252,9 +252,29 @@
         }
 
         $(window).on('resize', function () {
-            update()
+            var windowWidth = $(window).width();
+            if (windowWidth<750) {
+                clearInterval(interval);
+                id =0;
+                $('.carousel-items').css({
+                    left:0,
+                });
+                animationOn = false;
+            }
+//            else{
+//                if(animationOn === false){
+//                    animationOn = true;
+//                    var interval = setInterval(function () {
+//                        id -= 1;
+//                        update();
+//                    }, 2000)
+//                }
+                    //sprawdzic czy animacja jest
+                    //jezeli nie to ja wlaczyc
+//            }
+            update();
         })
-
+        var animationOn = true;
         var interval = setInterval(function () {
             id -= 1;
             update();
