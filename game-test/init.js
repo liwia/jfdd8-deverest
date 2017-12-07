@@ -13,10 +13,11 @@ $(document).ready(function () {
             if (time === 0) {
                 clearInterval(interval);
             $('.startGame').text('Play Again?').css({'opacity': '1', 'z-index': '0', 'height': '70px'});
+                $('.bubble').css('visibility', 'hidden');
             }
             $('.timer').text(time--)
             ;
-        }, 1000);
+        }, 100);
     });
 
     $('.bubble').click(function () {
