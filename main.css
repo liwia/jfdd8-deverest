@@ -87,10 +87,10 @@ body {
 }
 
 
-/*.flex {*/
-    /*z-index: 2;*/
-    /*position: relative;*/
-/*}*/
+.flex {
+    z-index: 2;
+    position: relative;
+}
 
 input[type=email] {
     width: 300px;
@@ -346,20 +346,6 @@ figure a .gitIcons {
     text-align: center;
     opacity: .9;
 }
-
-@media screen and (max-width: 768px) {
-
-}
-
-
-
-::placeholder {
-    color: white;
-    text-align: center;
-    opacity: .9;
-}
-
-
 
 /* my-carousel*/
 
