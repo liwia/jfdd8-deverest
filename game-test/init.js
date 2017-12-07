@@ -8,7 +8,7 @@ $(document).ready(function () {
         $('.timeBoard').css('visibility', 'visible');
         bubble.css('visibility', 'visible');
         $('.score').text(scoreNum);
-        var time = 30;
+        var time = 50;
         var interval = setInterval(function () {
             if (time === 0) {
                 clearInterval(interval);
@@ -17,7 +17,7 @@ $(document).ready(function () {
             }
             $('.timer').text(time--)
             ;
-        }, 1000);
+        }, 100);
         var stopInterval = setInterval(function () {
             var maxHeight = bubble.parent().height() - bubble.height();
             var maxWidth = bubble.parent().width() - bubble.width();
