@@ -133,17 +133,16 @@ input[type=submit]:active {
 
 footer {
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     color: #fff;
     background-color: #444;
     /*background-color: #333;*/
     text-align: center;
-    margin-top: 50px;
 }
 
 .footer {
-    padding: 50px 0 20px 0;
+    padding: 10px 0 20px 0;
     font-size: 0.8em;
 }
 
@@ -223,7 +222,7 @@ footer {
 
 #about-us {
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     background-color: #ffffff;
     justify-content: space-around;
     align-items: center;
