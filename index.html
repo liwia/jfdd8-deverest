@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="bs_styles.css">
-    <script src="./bootstrap/jquery.min.js"></script>
+    <script src="jquery-3.2.1.js"></script>
     <script src="./bootstrap/bootstrap.min.js"></script>
     <script src="parallax.min.js"></script>
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="horizontal-parallax.css">
+    <script src="city.js"></script>
 </head>
 <body id="main" data-spy="scroll" data-target=".navbar" data-offset="70">
 <nav class="navbar navbar-default">
@@ -66,46 +68,125 @@
             to organize everything exactly as you want! And what You don’t want is a ton of stickies lying around your
             house. So just follow these FEW SIMPLE STEPS and your perfect party plan will be there.</p>
     </div>
+    <!-- slider start>-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="my-carousel" id="feature-slider">
+                    <div class="carousel-items">
+                        <div class="item active">
+                            <div>
+                                <img src="pictures/iconmonstr-christmas-42-240.png"
+                                     class="img-responsive carouselItem center-block"/>
+                                <p><b>All types of events: </b></br>Ability to schedule any event such as birthdays,
+                                    meetings with friends etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-calendar-5-240.png"
+                                     class="img-responsive carouselItem center-block">
+                                <p><b>Calendar: </b><br/>Create your own event or join to existing.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-user-25-240.png"
+                                     class="img-responsive carouselItem center-block">
+                                <p><b>You specify the number of people: </b></br>It can be several or even several
+                                    hundred people.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/invitation.png" class="img-responsive carouselItem center-block">
+                                <p><b>Invitations: </b> </br>You invite anyone you want!</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-shopping-bag-17-240.png" alt=""
+                                     class="img-responsive carouselItem center-block">
+                                <p><b>Shopping list: </b></br>Make a list of the things you need and distribute it
+                                    between interested people.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-credit-card-16-240.png" alt=""
+                                     class="img-responsive carouselItem center-block">
+                                <p><b>Gift list: </b></br>Choosing gifts can be fun.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-time-9-240.png"
+                                     class="img-responsive carouselItem center-block">
+                                <p><b>Reminders: </b></br>Possibility to send reminders before each event.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-chart-1-240.png"
+                                     class="img-responsive carouselItem center-block">
+                                <p><b>Ranking:</b></br>Ranking of the best events.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="pictures/iconmonstr-picture-6-240.png"
+                                     class="img-responsive carouselItem center-block">
+                                <p><b> Gallery: </b></br>Gallery of organized events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="carousel-left">
+                        <span class="glyphicon glyphicon-menu-left"></span>
+                    </span>
+                    <span class="carousel-right">
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="flexContainer">
-    <div class="flexItem"><img src="pictures/iconmonstr-christmas-42-240.png"/>
-        <p><b>All types of events: </b></br>Ability to schedule any event such as birthdays, meetings with friends etc.
-        </p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-calendar-5-240.png"><br/>
-        <p><b>Calendar: </b><br/>Create your own event or join to existing.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-user-25-240.png"></br><p><b>You specify the number of
-        people: </b></br>It can be several or even several hundred people.</p></div>
-    <div class="flexItem"><img src="pictures/invitation.png"></br><p><b>Invitations: </b> </br>You invite anyone you
-        want!</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-shopping-bag-17-240.png" alt="">
-        <p><b>Shopping list: </b></br>Make a list of the things you need and distribute it between interested people.
-        </p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-credit-card-16-240.png" alt=""></br><p><b>Gift list: </b></br>
-        Choosing gifts can be fun.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-time-9-240.png"><br><b>Reminders: </b></br> Possibility to send
-        reminders before each event.
-    </div>
-    <div class="flexItem"><img src="pictures/iconmonstr-chart-1-240.png"></br><p><b>Ranking:</b></br>Ranking of the best
-        events.</p></div>
-    <div class="flexItem"><img src="pictures/iconmonstr-picture-6-240.png">
-        <p><b> Gallery: </b></br>Gallery of organized events.</p></div>
-</div>
-</div>
+
 <div id="email" class="email">
     <form class="flex" method="POST" action="https://formspree.io/WixerPlanner@gmail.com">
         <input type="hidden" name="_next" value="//localhost:63342/jfdd8-deverest/game-test/index.html"/>
         <p>
             Feel like getting in touch?
             <span
-               data-toggle="tooltip"
-               data-placement="top"
-               title="Chill out :) We gonna send you one email only"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Chill out :) We gonna send you one email only"
             ><img src="pictures\question.png"/></span>
         </p>
         <input name="user-email" type="email" placeholder="enter email">
         <input type="submit" class="submit" value="submit">
     </form>
+    <div class="horizontal-parallax">
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+        <!--<div class="par4"></div>-->
+        <!--<div class="par3"></div>-->
+        <!--<div class="par2"></div>-->
+        <!--<div class="par1"></div>-->
+    </div>
 </div>
 <div id="deverest">TEAM DEVEREST</div>
 
@@ -176,6 +257,89 @@
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
+
+        var id = 0;
+
+        var numberOfSlides = $('.carousel-items .item').length;
+        var lowerBound;
+
+        function calculateLowerBound(){
+            var windowWidth = $(window).width();
+            if(windowWidth > 1050){
+                var displayed =3;
+            }
+            else{
+                var displayed =2;
+            }
+            lowerBound = -1 * (numberOfSlides - displayed);
+        }
+        calculateLowerBound();
+
+        function incrementId(){
+            if(id < 0){
+                id += 1;
+            }
+        }
+
+        function decrementId(){
+            if(id > lowerBound){
+                id -= 1;
+            }
+        }
+
+        $('.carousel-left:visible').on('click', function () {
+            clearInterval(interval);
+//            id += 1;
+            incrementId();
+            update();
+        })
+
+        $('.carousel-right:visible').on('click', function () {
+            clearInterval(interval);
+//            id -= 1;
+            decrementId();
+            update();
+        })
+
+        function update() {
+            var width = $('.my-carousel').find('.item').width();
+
+            $('.carousel-items').stop().animate({
+                left: id * width
+            }, 1000)
+        }
+
+        $(window).on('resize', function () {
+            calculateLowerBound();
+//            wywoluje go to tutaj bo mogla sie zmienic ilosc wyswietlanych elementow w zaleznosci od szerosci
+            var windowWidth = $(window).width();
+            if (windowWidth<750) {
+                clearInterval(interval);
+                id =0;
+                $('.carousel-items').css({
+                    left:0,
+                });
+                animationOn = false;
+            }
+//            else{
+//                if(animationOn === false){
+//                    animationOn = true;
+//                    var interval = setInterval(function () {
+//                        id -= 1;
+//                        update();
+//                    }, 2000)
+//                }
+                    //sprawdzic czy animacja jest
+                    //jezeli nie to ja wlaczyc
+//            }
+            update();
+        })
+        var animationOn = true;
+        var interval = setInterval(function () {
+//            id -= 1;
+            decrementId();
+            update();
+        }, 2000)
     });
 </script>
 <script src="scroll_active.js"></script>

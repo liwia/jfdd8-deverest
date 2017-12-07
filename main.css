@@ -80,6 +80,16 @@ body {
     background-color: #333;
     padding-top: 150px;
     padding-bottom: 50px;
+    position: relative;
+    /*height: 250px;*/
+    /*background-color: #444;*/
+    /*padding: 30px;*/
+}
+
+
+.flex {
+    z-index: 2;
+    position: relative;
 }
 
 input[type=email] {
@@ -112,10 +122,10 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #333;
-    color: #f60;
-    border: 2px solid #f60;
- }
+    background-color: #f80;
+    color: white;
+    border: -2px solid #f60;
+}
 
 input[type=submit]:active {
     color: white;
@@ -175,31 +185,40 @@ footer {
     line-height: 30px;
 }
 
-.flexContainer {
+.multi-item-carousel .carousel-control.left,
+.multi-item-carousel .carousel-control.right {
+    background-image: none;
+    color: black;
+    text-shadow: none;
     display: flex;
-    flex-direction: row;
-    width: 80vw;
-    min-height: 10rem;
-    margin-left: 10vw;
-    margin-top: 5vw;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 120px;
 }
 
-.flexItem {
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-    color: #595959;
-    font-size: 1.2rem;
-    text-align: center;
+.container-fluid{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.carouselItem{
+    max-width: 70px;
+}
+.carousel{
+    text-align:center;
+}
+.item  p{
+    margin: 20px 0 0;
 }
 
 .flexItem img {
     width: 55px;
     margin-bottom: 8px;
 
+}
+
+.item{
+    min-height: 200px;
 }
 
 #about-us {
@@ -322,8 +341,68 @@ figure a .gitIcons {
     width: 50px;
     height: 50px;
 }
-
-@media screen and (max-width: 768px) {
-
+::placeholder {
+    color: white;
+    text-align: center;
+    opacity: .9;
 }
 
+/* my-carousel*/
+
+.my-carousel{
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.my-carousel .carousel-items{
+    display: flex;
+    width: 300%;
+    /*width: calc(9 * 50%);*/
+    /*media@ na 2 itemy*/
+    position: relative;
+}
+
+.my-carousel .carousel-items .item{
+    flex-grow: 1;
+    width: 1px;
+    text-align: center;
+}
+
+.carousel-left{
+    left: 0;
+    top: 15%;
+    position: absolute;
+}
+.carousel-right {
+    right: 0;
+    left: auto;
+    top: 15%;
+    position: absolute;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1050px) {
+    .my-carousel .carousel-items{
+        width: calc(9 * 50%);
+        /*media@ na 2 itemy*/
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .my-carousel .carousel-items{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        /*width: calc(9 * 100%);*/
+        /*media@ na 1 itemy*/
+    }
+    .my-carousel .carousel-items .item{
+        width: 100%;
+    }
+    .carousel-left{
+        display: none;
+    }
+    .carousel-right {
+        display: none;
+    }
+}
