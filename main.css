@@ -181,6 +181,7 @@ footer {
 .offer-content {
     text-align: justify;
     line-height: 30px;
+    padding-bottom: 10%;
 }
 
 .multi-item-carousel .carousel-control.left,
@@ -323,6 +324,7 @@ footer {
 }
 
 #offer {
+    height: 100vh;
     padding-top: 100px;
     width: 70vw;
     margin: 0 auto;
