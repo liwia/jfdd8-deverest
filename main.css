@@ -81,9 +81,7 @@ body {
     padding-top: 250px;
     padding-bottom: 50px;
     position: relative;
-    /*height: 250px;*/
-    /*background-color: #444;*/
-    /*padding: 30px;*/
+    height: 100vh;
 }
 
 .flex {
@@ -382,6 +380,13 @@ figure a .gitIcons {
     left: auto;
     top: 15%;
     position: absolute;
+}
+
+.on-card {
+    padding: 20px;
+    background: rgba(000, 000, 000, 0.5);
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1050px) {

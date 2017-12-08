@@ -2,7 +2,7 @@ body {
     font-family: 'Share Tech Mono', monospace;
     margin: 0;
     padding: 0;
- }
+}
 
 #background {
     width: 100%;
@@ -19,7 +19,7 @@ body {
     width: 10%;
     height: 7%;
     border: 1px solid #fff;
-    background-color: #F5D96C;
+    background-color: #F5D96C ;
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.5em;
@@ -33,7 +33,7 @@ body {
     width: 7%;
     height: 10%;
     border: 1px solid #fff;
-    background-color: #F5D96C;
+    background-color: #F5D96C ;
     text-align: center;
     font-size: 1em;
     top: 58%;
@@ -51,7 +51,7 @@ body {
 .bubbleArea {
     width: 60%;
     height: 45%;
-    /*background-color: #1b6d85;*/
+    /*background-color: #1b6d85 ;*/
     position: absolute;
     top: 77%;
     left: 46%;
@@ -70,9 +70,9 @@ body {
 
 h1 {
     font-size: 1.5em;
-    color: #F5D96C;
+    color: #F5D96C ;
     text-align: center;
-    background-color: #000000;
+    background-color: #000000 ;
     margin: auto;
     padding: 20px;
 }
@@ -83,7 +83,7 @@ h1 {
     width: 8%;
     height: 7%;
     border: 1px solid #fff;
-    background-color: #F5D96C;
+    background-color: #F5D96C ;
     text-align: center;
     font-size: 1.5rem;
     top: 55%;
@@ -91,4 +91,3 @@ h1 {
     padding-top: 20px;
     visibility: hidden;
 }
-
