@@ -295,7 +295,7 @@
             }, 1000)
         }
 
-        $(window).on('resize', function () {
+        $(window).on('load resize', function () {
             calculateLowerBound();
 //            wywoluje go to tutaj bo mogla sie zmienic ilosc wyswietlanych elementow w zaleznosci od szerosci
             var windowWidth = $(window).width();

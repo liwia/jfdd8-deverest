@@ -81,7 +81,7 @@ body {
     padding-top: 250px;
     padding-bottom: 50px;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .flex {
@@ -130,7 +130,7 @@ input[type=submit]:active {
 
 footer {
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     padding-top: 20px;
     color: #fff;
     background-color: #444;
@@ -322,7 +322,7 @@ footer {
 }
 
 #offer {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
     width: 70vw;
     margin: 0 auto;
