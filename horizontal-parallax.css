@@ -1,5 +1,6 @@
 .horizontal-parallax {
     background: url("game-test/img/city_night_light.png") no-repeat center center;
+    background-size: cover;
     display: flex;
     align-items: flex-end;
     position: absolute;
