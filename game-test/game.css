@@ -43,8 +43,8 @@ body {
 }
 
 .bubble {
-    top: 500px;
-    left: 500px;
+    top: 20%;
+    left: 20%;
     position: absolute;
     visibility: hidden;
 }
