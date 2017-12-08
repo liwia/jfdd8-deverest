@@ -1,7 +1,8 @@
 $(document).ready(function () {
     var scoreNum = 0;
     var bubble = $('.bubble');
-
+    var interval;
+    var stopInterval;
     $('.startGame').click(function () {
         scoreNum = 0;
         $('.scoreBoard').css('visibility', 'visible');
@@ -9,7 +10,8 @@ $(document).ready(function () {
         bubble.css('visibility', 'visible');
         $('.score').text(scoreNum);
         var time = 30;
-        var interval = setInterval(function () {
+        clearInterval(interval)
+        interval = setInterval(function () {
             if (time === 0) {
                 clearInterval(interval);
                 $('.startGame').text('Play Again?').css({'opacity': '1', 'z-index': '0', 'height': '70px'});
@@ -18,7 +20,8 @@ $(document).ready(function () {
             $('.timer').text(time--)
             ;
         }, 1000);
-        var stopInterval = setInterval(function () {
+        clearInterval(stopInterval)
+        stopInterval = setInterval(function () {
             var maxHeight = bubble.parent().height() - bubble.height();
             var maxWidth = bubble.parent().width() - bubble.width();
             bubble.css({
