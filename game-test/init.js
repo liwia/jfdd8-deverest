@@ -1,8 +1,9 @@
 $(document).ready(function () {
     var scoreNum = 0;
     var bubble = $('.bubble');
-    var interval;
-    var stopInterval;
+    var timerInterval;
+    var bubbleInterval;
+
     $('.startGame').click(function () {
         scoreNum = 0;
         $('.scoreBoard').css('visibility', 'visible');
@@ -12,20 +13,21 @@ $(document).ready(function () {
         $('.toWin').text('CLICK AS MANY PARTY BUBBLES AS YOU CAN!');
 
         var time = 30;
-        clearInterval(interval)
-        interval = setInterval(function () {
+        clearInterval(timerInterval);
+        timerInterval = setInterval(function () {
+            time--;
+            $('.timer').text(time);
             if (time === 0) {
-                clearInterval(interval);
+                clearInterval(timerInterval);
                 $('.startGame').text('Play Again?').css({'opacity': '1', 'z-index': '0', 'height': '70px'});
                 bubble.css('visibility', 'hidden');
                 showScore();
             }
-            $('.timer').text(time--)
-            ;
+
         }, 1000);
 
-        clearInterval(stopInterval)
-        stopInterval = setInterval(function () {
+        clearInterval(bubbleInterval);
+        bubbleInterval = setInterval(function () {
             var maxHeight = bubble.parent().height() - bubble.height();
             var maxWidth = bubble.parent().width() - bubble.width();
             bubble.css({
@@ -50,16 +52,9 @@ $(document).ready(function () {
     }
 
 
-
-
-
-
     bubble.click(function () {
         $('.score').text(scoreNum += 10);
-        // if (scoreNum > 1000) {
-        //     bubble.css('visibility', 'hidden');
-        //     $('.toWin').text('You Win!').css({'opacity': '1', 'z-index': '0'});
-        // }
+
     });
 
 });
