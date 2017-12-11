@@ -10,6 +10,8 @@ $(document).ready(function () {
         $('.timeBoard').css('visibility', 'visible');
         bubble.css('visibility', 'visible');
         $('.score').text(scoreNum);
+        $('.toWin').text('CLICK AS MANY PARTY BUBBLES AS YOU CAN!');
+
         var time = 30;
         clearInterval(timerInterval);
         timerInterval = setInterval(function () {
@@ -19,9 +21,11 @@ $(document).ready(function () {
                 clearInterval(timerInterval);
                 $('.startGame').text('Play Again?').css({'opacity': '1', 'z-index': '0', 'height': '70px'});
                 bubble.css('visibility', 'hidden');
+                showScore();
             }
 
-        }, 100);
+        }, 1000);
+
         clearInterval(bubbleInterval);
         bubbleInterval = setInterval(function () {
             var maxHeight = bubble.parent().height() - bubble.height();
@@ -34,16 +38,27 @@ $(document).ready(function () {
     });
 
 
+    function showScore() {
 
-
+        if (scoreNum < 100) {
+            $('.toWin').text('YOUR SCORE IS: ' + scoreNum + " - COULD BE BETTER")
+        }
+        else if (scoreNum < 200 && scoreNum > 100) {
+            $('.toWin').text('YOUR SCORE IS: ' + scoreNum + " - QUITE WELL")
+        }
+        else if (scoreNum > 200) {
+            $('.toWin').text('YOUR SCORE IS: ' + scoreNum + " - ARE YOU CHUCK NORRIS?")
+        }
+    }
 
 
     bubble.click(function () {
         $('.score').text(scoreNum += 10);
-        if (scoreNum === 1000) {
-            bubble.css('visibility', 'hidden');
-            $('.toWin').text('You Win!').css({'opacity': '1', 'z-index': '0'});
-        }
+
     });
 
 });
+
+
+
+
