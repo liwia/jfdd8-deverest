@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="horizontal-parallax.css">
     <script src="city.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
+
 </head>
 <body id="main" data-spy="scroll" data-target=".navbar" data-offset="70">
 <nav class="navbar navbar-default">
@@ -37,13 +40,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">HOME</a>
+            <a class="navbar-brand scrollup" href="#">HOME</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#offer">See more</a></li>
-                <li><a href="#email">Join</a></li>
-                <li><a href="#deverest">About us</a></li>
+                <li><a id="link1" href="#offer">See more</a></li>
+                <li><a id="link2" href="#email">Join</a></li>
+                <li><a id="link3" href="#deverest">About us</a></li>
             </ul>
         </div>
     </div>
@@ -229,7 +232,7 @@
 </div>
 
 <footer id="footer">
-    <div class="backToTopButton">
+    <div class="backToTopButton scrollup">
         <a href="#main">BACK TO TOP</a>
     </div>
     <div class="footer">Wixer.com made by Team Deverest &copy; 2017 All rights reserved.</div>
@@ -327,6 +330,31 @@
             update();
         }, 2000)
     });
+
+    jQuery(function($)
+        {
+            //zresetuj scrolla
+            $.scrollTo(0);
+
+            $('#link1').click(function() { $.scrollTo($('#offer'), 500); });
+            $('#link2').click(function() { $.scrollTo($('#email'), 500); });
+            $('#link3').click(function() { $.scrollTo($('#deverest'), 500); });
+
+            $('.scrollup').click(function(event) {
+                event.preventDefault();
+                $.scrollTo($('#main'), 500); });
+
+            //pokaż podczas przewijania
+            $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+
+        }
+
+    );
 </script>
 <script src="scroll_active.js"></script>
 </body>
