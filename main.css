@@ -81,9 +81,7 @@ body {
     padding-top: 250px;
     padding-bottom: 50px;
     position: relative;
-    /*height: 250px;*/
-    /*background-color: #444;*/
-    /*padding: 30px;*/
+    min-height: 100vh;
 }
 
 .flex {
@@ -132,8 +130,8 @@ input[type=submit]:active {
 
 footer {
     width: 100%;
+    min-height: 50vh;
     padding-top: 20px;
-    padding-bottom: 10px;
     color: #fff;
     background-color: #444;
     /*background-color: #333;*/
@@ -324,7 +322,7 @@ footer {
 }
 
 #offer {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
     width: 70vw;
     margin: 0 auto;
@@ -384,6 +382,13 @@ figure a .gitIcons {
     position: absolute;
 }
 
+.on-card {
+    padding: 20px;
+    background: rgba(000, 000, 000, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 750px) and (max-width: 1050px) {
     .my-carousel .carousel-items {
         width: calc(9 * 50%);
@@ -411,4 +416,8 @@ figure a .gitIcons {
     .carousel-right {
         display: none;
     }
+}
+
+.last-section {
+    height: 100vh;
 }

@@ -3,12 +3,12 @@ $(function () {
 
     var container = $('.horizontal-parallax');
 
-    var colors = ['#555555', '#666666', '#777777', '#888888'];
+    var colors = ['#01110E', '#12221F', '#23332F', '#34443F'];
 
     var elements = Array.from({ length: 4}, function (_, index) {
         index ++;
 
-        var blocks = Array.from({ length: 550}, function (_, index2) {
+        var blocks = Array.from({ length: 900}, function (_, index2) {
             return $('<div>').css({
                 height: Math.random() * 300,
                 backgroundColor: colors[index -1],
@@ -34,3 +34,4 @@ $(function () {
     });
     container.append(elements);
 });
+
